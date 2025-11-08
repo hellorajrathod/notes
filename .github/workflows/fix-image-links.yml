@@ -25,7 +25,6 @@ jobs:
               def replacer(match):
                   filename = match.group(1)
                   # Look for image file in any attachments or images folder nearby
-                  # Start from the md file's folder
                   search_dirs = [
                       md_path.parent / 'attachments',
                       md_path.parent / 'images'
